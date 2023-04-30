@@ -1,0 +1,140 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  font-family: 'Kumbh Sans', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  user-select: none;
+
+}
+.App{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.all {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 10px;
+  z-index: 9;
+ 
+}
+
+.top {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.images .mainImage {
+  position: absolute;
+  width: 150px;
+  margin-top: 120px;
+  margin-left: -170px;
+  z-index: 10;
+}
+.images .womanDesktop {
+  position: relative;
+  width: 400px;
+  z-index: 9;
+  top: 10%;
+  left: -35%;
+  overflow: hidden;
+  display: inline-block;
+}
+.pattern {
+  width: 600px;
+  z-index:99 ;
+  position:absolute ;
+  margin-top: -200px;
+  margin-left: -700px;
+  display: inline-block;
+}
+main h1{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.answer{
+  font-size: 12px;
+  max-width: 350px;
+  color: hsl(240, 6%, 50%);
+}
+.accordion{
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: 10px;
+}
+.top p{
+  font-size: 12px;
+  /* color: hsl(237, 12%, 33%); */
+}
+.top p:hover{
+  color:  hsl(14, 88%, 65%);
+}
+.flip {
+  transform: rotate(180deg);
+}
+@media (max-width: 1024px) {
+  .images .mainImage{
+    left: -5%;
+  }
+}
+@media (max-width : 768px) {
+  .all{
+    flex-direction: column;
+    padding: 10px;
+    gap: 0;
+    justify-content: center;
+  }
+  .App{
+    margin-top: 100px;
+    flex-direction: column;
+    background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  }
+  main h1{
+    text-align: center;
+  }
+  main{
+    padding-top: 0;
+  }
+  .images{
+    position: relative;
+    top: 25%;
+    left: 30%;
+  }
+  .images .womanDesktop{
+    width: 250px;
+    margin-top: -50%;
+   
+  }
+  .pattern{
+    width: 300px;
+    left: 0;
+    display: none;
+   
+  }
+  .images .mainImage{
+    width: 100px;
+    margin-top: -45px;
+    margin-left: -80px;
+  }
+  .top{
+    gap: 1.6rem;
+  }
+  .answer{
+    max-width: 250px;
+  }
+}
