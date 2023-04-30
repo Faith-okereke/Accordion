@@ -122,10 +122,15 @@ main h1{
    
   }
   .womanDesktop-2{
+    width: 200px;
     position: absolute;
-    top: -20%;
-    right: 1%;
+    top: -19%;
+    right: 15%;
 
+  }
+  .pattern-2{
+    width: 200px;
+    margin-top: -20px;
   }
   .womanDesktop-2, .pattern-2{
     display: block;
