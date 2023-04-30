@@ -16,6 +16,8 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+
 }
 .all {
   display: flex;
@@ -23,10 +25,10 @@ body {
   align-items: center;
   gap: 2rem;
   background-color: #fff;
-  padding: 5rem;
+  padding: 2rem;
   border-radius: 10px;
   z-index: 9;
- 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .top {
@@ -77,9 +79,6 @@ main h1{
   font-size: 12px;
   /* color: hsl(237, 12%, 33%); */
 }
-.top p:hover{
-  color:  hsl(14, 88%, 65%);
-}
 .flip {
   transform: rotate(180deg);
 }
@@ -96,13 +95,15 @@ main h1{
     justify-content: center;
   }
   .App{
-    margin-top: 100px;
+    margin-top: 120px;
     flex-direction: column;
     background: linear-gradient(
     to bottom,
     hsl(273, 75%, 66%),
     hsl(240, 73%, 65%)
   );
+  gap: 0;
+  
   }
   main h1{
     text-align: center;
@@ -112,6 +113,7 @@ main h1{
   }
   .images{
     position: relative;
+    width: auto;
     top: 25%;
     left: 30%;
   }
@@ -121,9 +123,8 @@ main h1{
    
   }
   .pattern{
-    width: 300px;
-    left: 0;
     display: none;
+    visibility: none;
    
   }
   .images .mainImage{

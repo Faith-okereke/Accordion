@@ -5,18 +5,28 @@ export default function Accordion(props) {
   const Show = () => {
     setShow(!show);
   };
- 
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+     setIsHover(true);
+  };
+  const handleMouseLeave = () => {
+     setIsHover(false);
+  };
+  const boxStyle = {
+    //...
+    color: isHover ? "hsl(14, 88%, 65%)" : "black",
+    fontWeight: show? "700" :  "normal",
+    // color : show?  : 
+ };
   return (
     <>
       <div className="accordion">
         <div onClick={Show} className="top">
           <p 
-            style={
-
-              show
-                ? { fontWeight: "700", color: "black", }
-                : { fontWeight: "normal", color: "hsl(237, 12%, 33%)" }
-            }
+            style={boxStyle}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             {props.question}
           </p>
