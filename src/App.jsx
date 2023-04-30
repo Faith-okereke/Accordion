@@ -8,6 +8,8 @@ import arrowdown from './assets/icon-arrow-down.svg'
 import bigImage from './assets/illustration-box-desktop.svg'
 import  womanDesktop from './assets/illustration-woman-online-desktop.svg'
 import pattern from './assets/bg-pattern-desktop.svg'
+import womanDesktop2 from './assets/illustration-woman-online-mobile.svg'
+import pattern2 from './assets/bg-pattern-mobile.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +21,8 @@ function App() {
       <div className="images">
       <img className='mainImage' src={bigImage} alt="" />
       <img className='womanDesktop' src= {womanDesktop} alt="" />
+      <img className='womanDesktop-2' src= {womanDesktop2} alt="" />
+      <img className='pattern-2' src={pattern2} alt="" />
       <img className='pattern' src={pattern} alt="" />
       </div>
     <main>
